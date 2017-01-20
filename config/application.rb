@@ -25,7 +25,7 @@ module EmailServer
 
     config.middleware.insert_before 0,"Rack::Cors" do
       allow do
-        origins 'clapinton.com' # CHANGE THIS...
+        origins '*' # CHANGE THIS...
         resource '*', headers: :any, methods: [:post] # ... AND THIS
       end
     end
