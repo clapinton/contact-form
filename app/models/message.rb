@@ -17,9 +17,9 @@ class Message < ActiveRecord::Base
     # msg = "blablabla"
     # enc_msg = Base64.encode64(msg)
     # post_data = { }
-    # url = 'https://www.googleapis.com/gmail/v1/users/eric.olivetree/messages/send'
+    # url = ''
     # uri = URI(url)
-    # Net::HTTP.post uri, { "raw" => "ezp0bz0+ImVyaWMub2xpdmV0cmVlQGdtYWlsLmNvbSIsIDpmcm9tPT4iZXJp\nYy5vbGl2ZXRyZWVAZ21haWwuY29tIiwgOnN1YmplY3Q9PiIxc3QgdGVzdCJ9"}.to_json,
+    # Net::HTTP.post uri, { "raw" => ""}.to_json,
     #            "Content-Type" => "application/json"
   end
 
