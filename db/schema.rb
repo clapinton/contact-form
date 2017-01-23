@@ -11,15 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170118225359) do
+ActiveRecord::Schema.define(version: 20170122234312) do
 
   create_table "messages", force: :cascade do |t|
-    t.string   "from_email", null: false
-    t.text     "body",       null: false
-    t.boolean  "sent",       null: false
+    t.string   "from_email",               null: false
+    t.text     "body",                     null: false
+    t.boolean  "sent",                     null: false
     t.text     "error_msg"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.string   "captcha_key", default: "", null: false
   end
 
 end
