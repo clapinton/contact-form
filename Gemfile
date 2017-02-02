@@ -32,6 +32,9 @@ gem 'figaro'
 # NewRelic gem
 gem 'newrelic_rpm'
 
+# Better logging
+gem 'rails_12factor'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
