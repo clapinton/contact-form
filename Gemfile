@@ -29,6 +29,9 @@ gem 'rack-cors', :require => 'rack/cors'
 # Figaro for Env Vars management
 gem 'figaro'
 
+# NewRelic gem
+gem 'newrelic_rpm'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
