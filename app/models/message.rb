@@ -23,4 +23,12 @@ class Message < ActiveRecord::Base
     #            "Content-Type" => "application/json"
   end
 
+  def captcha_validated?()
+    secret = ENV["captcha_secret"]
+    debugger
+    uri = URI("https://www.google.com/recaptcha/api/siteverify")
+    res = Net::HTTP.post_form(uri, secret: secret, response: self.captcha_key)
+    JSON.parse(res.body)["success"]
+  end
+
 end
