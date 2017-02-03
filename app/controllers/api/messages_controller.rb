@@ -1,7 +1,6 @@
 class Api::MessagesController < ApplicationController
 
   def index
-    # debugger
     if params[:euzinho] == ENV["access_secret"]
       @messages = Message.all
     else
